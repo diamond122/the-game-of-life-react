@@ -1,0 +1,89 @@
+.container {
+    margin: auto;
+    padding: 20px;
+    width: min-content;
+}
+
+h1 {
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.actions button {
+    margin: 0 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:disabled {
+    cursor: no-drop;
+}
+
+.board {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.notifications p {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.settings {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.setting-option {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.setting-option .cell-wrapper {
+    border-radius: 5px;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.setting-option .cell-wrapper.active {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.setting-option .cell {
+    width: 10px;
+    height: 10px;
+}
+
+.settings select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
